@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GehaNews+</title>
+
+<!-- Hubungkan file CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <h1>GehaNews+</h1>
+    <button onclick="toggleDark()" class="dark-btn">
+        Mode Gelap
+    </button>
+</header>
+
+<nav>
+    <a href="#">Artikel</a>
+    <a href="#">Sport</a>
+    <a href="#">Teknologi</a>
+    <a href="#">Bisnis</a>
+    <a href="#">Hiburan</a>
+    <a href="#">Otomotif</a>
+    <a href="#">Lifestyle</a>
+</nav>
+
+<div class="breaking">
+    <span>BREAKING NEWS: Pemerintah umumkan kebijakan terbaru! • Harga BBM turun! • Cuaca ekstrem melanda beberapa wilayah!</span>
+</div>
+
+<div class="container">
+    
+    <!-- BERITA UTAMA -->
+    <div class="big-news">
+        <img src="https://source.unsplash.com/900x500/?news" alt="">
+        <h2>Kumpulan Artikel Update dan Berita nasional </h2>
+        <p>Di buat dengan sepenuh hati dan senang bahagia tidak terlalu serius, </p>
+    </div>
+
+    <!-- SIDEBAR BERITA -->
+    <aside>
+        <!-- CARD 1 -->
+<a href="artikel1.html" class="card-link">
+<div class="card">
+    <img src="foto1.jpeg" class="header-img">
+
+    <div>
+        <h3>Dampak Tambang Nikel dan Batu Bara terhadap Banjir di Indonesia</h3>
+        <p>Oleh: Mustofa dan Nabil</p>
+    </div>
+</div>
+</a>
+
+<!-- CARD 2 -->
+<a href="artikel2.html" class="card-link">
+<div class="card">
+    <img src="foto2.jpeg" class="header-img">
+    <div>
+        <h3>Analisis Metode Pembelajaran Kitab Kuning di Pondok Pesantren Perspektif Abid Al-Jabiri</h3>
+        <p>Oleh: Muhammad Ubaidillah Hanan & Muhammad Najib Afika </p>
+    </div>
+</div>
+</a>
+
+<!-- CARD 3 -->
+<a href="artikel3.html" class="card-link">
+<div class="card">
+    <img src="https://source.unsplash.com/300x200/?politic" alt="">
+    <div>
+        <h3>Situasi Politik Terkini</h3>
+        <p>Perkembangan terbaru dari dunia politik nasional.</p>
+    </div>
+</div>
+</a>
+
+    </aside>
+
+</div>
+
+<footer>
+    © 2025 GehaNews+ — Semua Hak Dilindungi
+</footer>
+
+<script>
+function toggleDark() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: #0054a6;
+    padding: 15px 25px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Tombol Mode Gelap */
+.dark-btn {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background: white;
+    color: #0054a6;
+}
+.dark-mode {
+    background: #111 !important;
+    color: #eee !important;
+}
+
+/* MENU */
+nav {
+    background: #007bff;
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* BREAKING NEWS */
+.breaking {
+    background: #ff0000;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.breaking span {
+    display: inline-block;
+    animation: move 15s linear infinite;
+}
+
+@keyframes move {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* BERITA UTAMA */
+.big-news img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.big-news h2 {
+    font-size: 26px;
+}
+
+/* CARD BERITA */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 140px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #0054a6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
